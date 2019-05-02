@@ -42,10 +42,6 @@ class SCLAlertViewPropertiesTests: XCTestCase {
         XCTAssertTrue(alert.appearance.kCircleIconHeight == 20.0)
     }
     
-    func testSCLAlertViewTitleTop() {
-        XCTAssertTrue(alert.appearance.kTitleTop == 30.0)
-    }
-    
     func testSCLAlertViewTitleHeight() {
         XCTAssertTrue(alert.appearance.kTitleHeight == 40.0)
     }
@@ -130,8 +126,6 @@ class SCLAlertViewPropertiesTests: XCTestCase {
         XCTAssertTrue(alert.circleBG.isKind(of:UIView.self))
         XCTAssertTrue(alert.circleBG.frame.origin.x == 0)
         XCTAssertTrue(alert.circleBG.frame.origin.y == 0)
-        XCTAssertTrue(alert.circleBG.frame.size.width == kCircleHeightBackground)
-        XCTAssertTrue(alert.circleBG.frame.size.height == kCircleHeightBackground)
     }
     
     func testSCLAlertViewCircleView() {
